@@ -1,0 +1,22 @@
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.exe.config
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.exe
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.pdb
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.csprojResolveAssemblyReference.cache
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Properties.Resources.resources
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.csproj.GenerateResource.Cache
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.exe
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.pdb
+c:\users\duvanvilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.InicioSesion.resources
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.exe.config
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.exe
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.pdb
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.csprojResolveAssemblyReference.cache
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.InicioSesion.resources
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Properties.Resources.resources
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.csproj.GenerateResource.Cache
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.exe
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.pdb
+C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.FrmPrincipal.resources
+C:\Users\DuvanVilla\Documents\Trabajo Final\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.exe.config
+C:\Users\DuvanVilla\Documents\Trabajo Final\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.exe
+C:\Users\DuvanVilla\Documents\Trabajo Final\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.pdb
