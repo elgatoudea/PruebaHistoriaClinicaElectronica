@@ -20,3 +20,10 @@ C:\Users\DuvanVilla\Desktop\HistoriaClinicaElectronica\HistoriaClinicaElectronic
 C:\Users\DuvanVilla\Documents\Trabajo Final\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\HistoriaClinicaElectronica.exe.config
 C:\Users\DuvanVilla\Documents\Trabajo Final\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.exe
 C:\Users\DuvanVilla\Documents\Trabajo Final\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.pdb
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\EntityFramework.dll
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\EntityFramework.xml
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Usuario.resources
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Inicio.resources
+C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Consulta.resources

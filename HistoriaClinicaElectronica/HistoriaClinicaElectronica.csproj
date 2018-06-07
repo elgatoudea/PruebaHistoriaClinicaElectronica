@@ -33,7 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,12 +56,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\ControladorInicial.cs" />
+    <Compile Include="Datos\AccesoDatosPaciente.cs" />
+    <Compile Include="Datos\Context.cs" />
+    <Compile Include="Datos\Initializer.cs" />
+    <Compile Include="Entidades\EstadoCivil.cs" />
+    <Compile Include="Entidades\Paciente.cs" />
     <Compile Include="Entidades\TipoDocumento.cs" />
-    <Compile Include="Interfaz\FrmPrincipalMedico.cs">
+    <Compile Include="Entidades\TipoSangre.cs" />
+    <Compile Include="Entidades\TipoVinculacion.cs" />
+    <Compile Include="Interfaz\Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaz\FrmPrincipalMedico.Designer.cs">
-      <DependentUpon>FrmPrincipalMedico.cs</DependentUpon>
+    <Compile Include="Interfaz\Consulta.Designer.cs">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\InicioSesion.cs">
       <SubType>Form</SubType>
@@ -60,19 +82,32 @@
     <Compile Include="Interfaz\InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Interfaz\FrmPrincipalMedico.resx">
-      <DependentUpon>FrmPrincipalMedico.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaz\Consulta.resx">
+      <DependentUpon>Consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Usuario.resx">
+      <DependentUpon>Usuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,12 +126,26 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\consulta.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Recursos\Imagenes\Inicio.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Recursos\Imagenes\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\UsuarioNuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\consulta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\Nuevo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\agendar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

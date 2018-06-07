@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HistoriaClinicaElectronica.Interfaz;
+using Datos;
+using HistoriaClinicaElectronica.Entidades;
 
 namespace HistoriaClinicaElectronica.Control
 {
@@ -32,9 +34,9 @@ namespace HistoriaClinicaElectronica.Control
             if (Usuario == UsuarioMedico && Contraseña == ContraseñaMedico)
             {
                 //Ocultar este formulario
-                Interfaz.FrmPrincipal.ActiveForm.Hide();
+                Form.ActiveForm.Hide();
                 //Crear Nuevo formulario
-                Interfaz.FrmPrincipal frm = new Interfaz.FrmPrincipal();
+                Interfaz.Inicio frm = new Interfaz.Inicio();
                 //Activar-Motrar formulario principal
                 frm.Show();
 
@@ -52,6 +54,11 @@ namespace HistoriaClinicaElectronica.Control
             return estado;
         }
 
+        internal static void IngresarPaciente(Paciente paciente)
+        {
+            AccesoDatosPaciente.IngresarPaciente(paciente);
+        }
+
         //Controlador de Salida
         public void DeseaSalir(DialogResult resultado)
         {
@@ -59,18 +66,27 @@ namespace HistoriaClinicaElectronica.Control
             switch (resultado)
             {
                 case DialogResult.Yes:
-                    Interfaz.FrmPrincipal.ActiveForm.Close(); break;
+                    Interfaz.Inicio.ActiveForm.Close(); break;
                 case DialogResult.No:
                     break;
             }
         }
 
+        public int EsPrimeraVez(int contador)
+        {
+            if (contador == 0)
+            {
+                MessageBox.Show("Espere por favor Mientras Carga la Base de Datos", "Conexión a la Base de Datos en Curso...", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return contador=contador+1;
+            }
+            return contador;
+        }
 
-        public void CerrarSesion()
+    public void CerrarSesion()
         {
 
             //Ocultar este formulario
-            Interfaz.FrmPrincipal.ActiveForm.Hide();
+            Interfaz.Inicio.ActiveForm.Hide();
             //Crear Nuevo formulario
             InicioSesion frm = new InicioSesion();
             //Activar-Motrar formulario principal
@@ -78,5 +94,37 @@ namespace HistoriaClinicaElectronica.Control
         }
 
 
+
+        internal static List<Entidades.TipoDocumento> ObtenerTiposDocumento()
+        {
+            return AccesoDatosPaciente.ObtenerTiposDocumento();
+        }
+
+        internal static List<Entidades.EstadoCivil> ObtenerEstadosCiviles()
+        {
+            return AccesoDatosPaciente.ObtenerEstadosCiviles();
+        }
+
+        internal static List<Entidades.Paciente> ObtenerPacientes()
+        {
+            return AccesoDatosPaciente.ObtenerPacientes();
+        }
+
+        internal static List<Entidades.TipoVinculacion> ObtenerTiposVinculacion()
+        {
+            return AccesoDatosPaciente.ObtenerTiposViculacion();
+        }
+
+        internal static List<Entidades.TipoSangre> ObtenerTiposSangre()
+        {
+            return AccesoDatosPaciente.ObtenerTiposSangre();
+        }
+
+        internal void Refrescar()
+        {
+            Interfaz.Usuario.ActiveForm.Close();
+            Usuario frm = new Usuario();
+            frm.ShowDialog();
+        }
     }
 }
