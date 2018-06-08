@@ -9,13 +9,26 @@ namespace HistoriaClinicaElectronica.Entidades
     public class Paciente
     {
         public int Id { get; set; }
-        public long NumeroDocumento { get; set; }
+        public string NumeroDocumento { get; set; }
         public string Nombres { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
+        public string TelefonoFijo { get; set; }
         public string Telefono { get; set; }
+        public string Sexo { get; set; }
+        public string Deporte { get; set; }
+        public string CualDeporte { get; set; }
+        public string TiempoLibre { get; set; }
+        public string CualTiempoLibre { get; set; }
+        public string ProblemaSalud { get; set; }
+        public string Medicamento { get; set; }
+        public string ConsumoSustancias { get; set; }
+        public string TratamientoPsicologico { get; set; }
+        public string Tratamiento { get; set; }
+        public string Otros { get; set; }
 
-        
+
+
         public DateTime FechaNacimiento { get; set; }
 
         public int IdEstadoCivil { get; set; }
@@ -29,5 +42,8 @@ namespace HistoriaClinicaElectronica.Entidades
 
         public int IdTipoSangre { get; set; }
         public virtual TipoSangre TipoSangre { get; set; }
+
+        public int IdEstrato { get; set; }
+        public virtual Estrato Estrato { get; set; }
     }
 }

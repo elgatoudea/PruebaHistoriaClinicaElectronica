@@ -27,3 +27,5 @@ C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectro
 C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Usuario.resources
 C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Inicio.resources
 C:\Users\DuvanVilla\Documents\Visual Studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Consulta.resources
+C:\Users\DuvanVilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.Agenda.resources
+C:\Users\DuvanVilla\documents\visual studio 2015\Projects\HistoriaClinicaElectronica\HistoriaClinicaElectronica\obj\Debug\HistoriaClinicaElectronica.Interfaz.AcercaHCE.resources

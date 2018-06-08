@@ -34,8 +34,6 @@ namespace Datos
             return context.Pacientes.ToList();
         }
 
-        
-
         internal static List<TipoVinculacion> ObtenerTiposViculacion()
         {
             return context.TiposVinculacion.ToList();
@@ -44,6 +42,11 @@ namespace Datos
         internal static List<TipoSangre> ObtenerTiposSangre()
         {
             return context.TiposSangre.ToList();
+        }
+
+        internal static List<Estrato> ObtenerEstrato()
+        {
+            return context.Estratos.ToList();
         }
     }
 }

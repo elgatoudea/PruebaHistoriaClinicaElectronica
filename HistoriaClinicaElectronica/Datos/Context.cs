@@ -20,6 +20,7 @@ namespace HistoriaClinicaElectronica.Datos
         public DbSet<EstadoCivil> EstadosCiviles { get; set; }
         public DbSet<TipoVinculacion> TiposVinculacion { get; set; }
         public DbSet<TipoSangre> TiposSangre { get; set; }
+        public DbSet<Estrato> Estratos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -45,6 +46,12 @@ namespace HistoriaClinicaElectronica.Datos
                 .HasMany(p => p.Pacientes)
                 .WithRequired(p => p.TipoSangre)
                 .HasForeignKey(p => p.IdTipoSangre)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Estrato>()
+                .HasMany(p => p.Pacientes)
+                .WithRequired(p => p.Estrato)
+                .HasForeignKey(p => p.IdEstrato)
                 .WillCascadeOnDelete(false);
 
         }

@@ -12,12 +12,42 @@ namespace HistoriaClinicaElectronica.Control
 {
     public class ControladorInicial
     {
-        //Crear Objeto de la Clase Control
-        //public Control.ControladorInicial objetoControl = new Control.ControladorInicial();
-
+        
+       
         //Declaración variables privadas locales
         private String UsuarioMedico = "MedUsb", UsuarioEnfermera = "EnfUsb";
         private String ContraseñaMedico = "UsbMed", ContraseñaEnfermera = "UsbEnf";
+
+       
+        internal static List<Entidades.TipoDocumento> ObtenerTiposDocumento()
+        {
+            return AccesoDatosPaciente.ObtenerTiposDocumento();
+        }
+
+        internal static List<Entidades.EstadoCivil> ObtenerEstadosCiviles()
+        {
+            return AccesoDatosPaciente.ObtenerEstadosCiviles();
+        }
+
+        internal static List<Entidades.Paciente> ObtenerPacientes()
+        {
+            return AccesoDatosPaciente.ObtenerPacientes();
+        }
+
+        internal static List<Entidades.TipoVinculacion> ObtenerTiposVinculacion()
+        {
+            return AccesoDatosPaciente.ObtenerTiposViculacion();
+        }
+
+        internal static List<Entidades.TipoSangre> ObtenerTiposSangre()
+        {
+            return AccesoDatosPaciente.ObtenerTiposSangre();
+        }
+
+        internal static List<Entidades.Estrato> ObtenerEstrato()
+        {
+            return AccesoDatosPaciente.ObtenerEstrato();
+        }
 
         /// <summary>
         /// Metodo para validar Usuario y Contraseña
@@ -46,7 +76,8 @@ namespace HistoriaClinicaElectronica.Control
             {
                 estado = true;
             }
-            else {
+            else
+            {
                 MessageBox.Show("El usuario y/o contraseña estan incorrectos", "Ingreso Denegado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 estado = false;
             }
@@ -77,12 +108,12 @@ namespace HistoriaClinicaElectronica.Control
             if (contador == 0)
             {
                 MessageBox.Show("Espere por favor Mientras Carga la Base de Datos", "Conexión a la Base de Datos en Curso...", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return contador=contador+1;
+                return contador = contador + 1;
             }
             return contador;
         }
 
-    public void CerrarSesion()
+        public void CerrarSesion()
         {
 
             //Ocultar este formulario
@@ -93,38 +124,35 @@ namespace HistoriaClinicaElectronica.Control
             frm.Show();
         }
 
-
-
-        internal static List<Entidades.TipoDocumento> ObtenerTiposDocumento()
-        {
-            return AccesoDatosPaciente.ObtenerTiposDocumento();
-        }
-
-        internal static List<Entidades.EstadoCivil> ObtenerEstadosCiviles()
-        {
-            return AccesoDatosPaciente.ObtenerEstadosCiviles();
-        }
-
-        internal static List<Entidades.Paciente> ObtenerPacientes()
-        {
-            return AccesoDatosPaciente.ObtenerPacientes();
-        }
-
-        internal static List<Entidades.TipoVinculacion> ObtenerTiposVinculacion()
-        {
-            return AccesoDatosPaciente.ObtenerTiposViculacion();
-        }
-
-        internal static List<Entidades.TipoSangre> ObtenerTiposSangre()
-        {
-            return AccesoDatosPaciente.ObtenerTiposSangre();
-        }
-
         internal void Refrescar()
         {
             Interfaz.Usuario.ActiveForm.Close();
             Usuario frm = new Usuario();
             frm.ShowDialog();
         }
+
+
+        public bool EsNumero(KeyPressEventArgs e)
+        {
+            bool valor = false;
+
+            if (!((int)e.KeyChar == 8 || (int)e.KeyChar >= 48 && (int)e.KeyChar <= 57))
+            {
+                valor = true;
+            }
+            return valor;
+        }
+
+        public bool esVacio(string campo)
+        {
+            bool estado = true;
+
+            if (campo == ""){estado = true;}
+            else{estado = false;}
+
+            return estado;
+        }
+
+       
     }
 }

@@ -64,5 +64,28 @@ namespace HistoriaClinicaElectronica.Interfaz
             Consulta frmConsulta = new Consulta();
             frmConsulta.ShowDialog();
         }
+
+        private void pbxAgendar_Click(object sender, EventArgs e)
+        {
+            Agenda frmAgenda = new Agenda();
+            frmAgenda.Show();
+        }
+
+        private void programarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Agenda frmAgenda = new Agenda();
+            frmAgenda.Show();
+        }
+
+        private void verAyudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Para acceder a este servicio debes adquirir la licencia Premium. \n\nContactanos ya mismo para comprarla", "Mensaje Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void acercaDeHCEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AcercaHCE acercaDe = new AcercaHCE();
+            acercaDe.ShowDialog();
+        }
     }
 }

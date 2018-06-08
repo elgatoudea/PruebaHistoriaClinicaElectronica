@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Historia.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -60,10 +63,23 @@
     <Compile Include="Datos\Context.cs" />
     <Compile Include="Datos\Initializer.cs" />
     <Compile Include="Entidades\EstadoCivil.cs" />
+    <Compile Include="Entidades\Estrato.cs" />
     <Compile Include="Entidades\Paciente.cs" />
     <Compile Include="Entidades\TipoDocumento.cs" />
     <Compile Include="Entidades\TipoSangre.cs" />
     <Compile Include="Entidades\TipoVinculacion.cs" />
+    <Compile Include="Interfaz\AcercaHCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\AcercaHCE.Designer.cs">
+      <DependentUpon>AcercaHCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Agenda.Designer.cs">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +106,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaz\AcercaHCE.resx">
+      <DependentUpon>AcercaHCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaz\Agenda.resx">
+      <DependentUpon>Agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaz\Consulta.resx">
       <DependentUpon>Consulta.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +168,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Recursos\Imagenes\agendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\Adelante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\Atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Recursos\Iconos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Historia.ico" />
+    <None Include="Recursos\Imagenes\Acerca.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

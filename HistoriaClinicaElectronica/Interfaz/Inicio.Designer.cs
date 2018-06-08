@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbxAgendar = new System.Windows.Forms.PictureBox();
-            this.pbxConsultar = new System.Windows.Forms.PictureBox();
-            this.pbxNuevoUsuario = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,46 +42,16 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verAyudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.soporteTécnicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.acercaDeHCEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pbxAgendar = new System.Windows.Forms.PictureBox();
+            this.pbxConsultar = new System.Windows.Forms.PictureBox();
+            this.pbxNuevoUsuario = new System.Windows.Forms.PictureBox();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAgendar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxConsultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNuevoUsuario)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pbxAgendar
-            // 
-            this.pbxAgendar.Image = global::HistoriaClinicaElectronica.Properties.Resources.agendar;
-            this.pbxAgendar.Location = new System.Drawing.Point(533, 58);
-            this.pbxAgendar.Name = "pbxAgendar";
-            this.pbxAgendar.Size = new System.Drawing.Size(208, 204);
-            this.pbxAgendar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxAgendar.TabIndex = 16;
-            this.pbxAgendar.TabStop = false;
-            // 
-            // pbxConsultar
-            // 
-            this.pbxConsultar.Image = global::HistoriaClinicaElectronica.Properties.Resources.consulta1;
-            this.pbxConsultar.Location = new System.Drawing.Point(21, 41);
-            this.pbxConsultar.Name = "pbxConsultar";
-            this.pbxConsultar.Size = new System.Drawing.Size(238, 235);
-            this.pbxConsultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxConsultar.TabIndex = 15;
-            this.pbxConsultar.TabStop = false;
-            this.pbxConsultar.Click += new System.EventHandler(this.pbxConsultar_Click);
-            // 
-            // pbxNuevoUsuario
-            // 
-            this.pbxNuevoUsuario.Image = global::HistoriaClinicaElectronica.Properties.Resources.Nuevo;
-            this.pbxNuevoUsuario.Location = new System.Drawing.Point(265, 41);
-            this.pbxNuevoUsuario.Name = "pbxNuevoUsuario";
-            this.pbxNuevoUsuario.Size = new System.Drawing.Size(238, 235);
-            this.pbxNuevoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbxNuevoUsuario.TabIndex = 14;
-            this.pbxNuevoUsuario.TabStop = false;
-            this.pbxNuevoUsuario.Click += new System.EventHandler(this.pbxNuevoUsuario_Click);
             // 
             // menuStrip1
             // 
@@ -114,21 +82,22 @@
             this.agendaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.programarToolStripMenuItem});
             this.agendaToolStripMenuItem.Name = "agendaToolStripMenuItem";
-            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.agendaToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.agendaToolStripMenuItem.Text = "Agenda";
             // 
             // programarToolStripMenuItem
             // 
             this.programarToolStripMenuItem.Name = "programarToolStripMenuItem";
-            this.programarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.programarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.programarToolStripMenuItem.Text = "Programación";
+            this.programarToolStripMenuItem.Click += new System.EventHandler(this.programarToolStripMenuItem_Click);
             // 
             // agregarToolStripMenuItem
             // 
             this.agregarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuevoUsuarioToolStripMenuItem});
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // nuevoUsuarioToolStripMenuItem
@@ -143,7 +112,7 @@
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.historiaClínicaToolStripMenuItem});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.consultaToolStripMenuItem.Text = "Consulta";
             // 
             // historiaClínicaToolStripMenuItem
@@ -156,19 +125,19 @@
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(140, 6);
             // 
             // cerrarSesiónToolStripMenuItem
             // 
             this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
-            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             this.cerrarSesiónToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesiónToolStripMenuItem_Click_1);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click_1);
             // 
@@ -176,7 +145,6 @@
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.verAyudaToolStripMenuItem,
-            this.soporteTécnicoToolStripMenuItem,
             this.toolStripSeparator3,
             this.acercaDeHCEToolStripMenuItem});
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
@@ -186,25 +154,54 @@
             // verAyudaToolStripMenuItem
             // 
             this.verAyudaToolStripMenuItem.Name = "verAyudaToolStripMenuItem";
-            this.verAyudaToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.verAyudaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.verAyudaToolStripMenuItem.Text = "Ver Ayuda";
-            // 
-            // soporteTécnicoToolStripMenuItem
-            // 
-            this.soporteTécnicoToolStripMenuItem.Name = "soporteTécnicoToolStripMenuItem";
-            this.soporteTécnicoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.soporteTécnicoToolStripMenuItem.Text = "Soporte Técnico";
+            this.verAyudaToolStripMenuItem.Click += new System.EventHandler(this.verAyudaToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(156, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // acercaDeHCEToolStripMenuItem
             // 
             this.acercaDeHCEToolStripMenuItem.Name = "acercaDeHCEToolStripMenuItem";
-            this.acercaDeHCEToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.acercaDeHCEToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.acercaDeHCEToolStripMenuItem.Text = "Acerca de HCE";
+            this.acercaDeHCEToolStripMenuItem.Click += new System.EventHandler(this.acercaDeHCEToolStripMenuItem_Click);
+            // 
+            // pbxAgendar
+            // 
+            this.pbxAgendar.Image = global::HistoriaClinicaElectronica.Properties.Resources.agendar;
+            this.pbxAgendar.Location = new System.Drawing.Point(533, 58);
+            this.pbxAgendar.Name = "pbxAgendar";
+            this.pbxAgendar.Size = new System.Drawing.Size(208, 204);
+            this.pbxAgendar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxAgendar.TabIndex = 16;
+            this.pbxAgendar.TabStop = false;
+            this.pbxAgendar.Click += new System.EventHandler(this.pbxAgendar_Click);
+            // 
+            // pbxConsultar
+            // 
+            this.pbxConsultar.Image = global::HistoriaClinicaElectronica.Properties.Resources.consulta1;
+            this.pbxConsultar.Location = new System.Drawing.Point(21, 41);
+            this.pbxConsultar.Name = "pbxConsultar";
+            this.pbxConsultar.Size = new System.Drawing.Size(238, 235);
+            this.pbxConsultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxConsultar.TabIndex = 15;
+            this.pbxConsultar.TabStop = false;
+            this.pbxConsultar.Click += new System.EventHandler(this.pbxConsultar_Click);
+            // 
+            // pbxNuevoUsuario
+            // 
+            this.pbxNuevoUsuario.Image = global::HistoriaClinicaElectronica.Properties.Resources.Nuevo;
+            this.pbxNuevoUsuario.Location = new System.Drawing.Point(265, 41);
+            this.pbxNuevoUsuario.Name = "pbxNuevoUsuario";
+            this.pbxNuevoUsuario.Size = new System.Drawing.Size(238, 235);
+            this.pbxNuevoUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbxNuevoUsuario.TabIndex = 14;
+            this.pbxNuevoUsuario.TabStop = false;
+            this.pbxNuevoUsuario.Click += new System.EventHandler(this.pbxNuevoUsuario_Click);
             // 
             // Inicio
             // 
@@ -217,17 +214,18 @@
             this.Controls.Add(this.pbxNuevoUsuario);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inicio_FormClosing);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxAgendar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxConsultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxNuevoUsuario)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +247,6 @@
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verAyudaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem soporteTécnicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem acercaDeHCEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarToolStripMenuItem;
